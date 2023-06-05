@@ -58,12 +58,27 @@
   margin-left: 3px;
   height: 23px; /* Adjust the height as desired */
   width: 380px;
+  border-color: #ccc;
+  border-width: 1px;
+  border-top-color: #ccc;
 }
 .mtable {
   display: flex;
   margin-left: 15px;
 }
+
+td{
+  font-family: 'Arial';
+  font-size: 15px;
+}
+
 td:first-child{
   width: 220px;
   height: 35px;
+}
+
+.line {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 10px 0;
 }
