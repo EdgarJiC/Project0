@@ -33,3 +33,37 @@
   justify-content: center;
   align-items: center;
 }
+
+.AdvanceLogo{
+  height: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  justify-content: left;
+  display: flex;
+}
+.containerAd {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.labelAd {
+  margin-bottom: 5px;
+  margin-right: 55px;
+}
+
+.textboxAd {
+  margin-left: 3px;
+  height: 23px; /* Adjust the height as desired */
+  width: 380px;
+}
+.mtable {
+  display: flex;
+  margin-left: 15px;
+}
+td:first-child{
+  width: 220px;
+  height: 35px;
+}
