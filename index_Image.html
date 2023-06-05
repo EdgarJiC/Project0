@@ -14,9 +14,18 @@
             <form action="https://www.google.com/imghp">
                 <input class="MainForm" type="text" name="q">
                 <div class="center-button">
-                  <input type="submit" value="Google Search">
+                  <input type="submit" value="Google Image Search">
                 </div>
             </form>
+            <script>
+                // Update the form action URL to Google Image search
+                document.querySelector("form").addEventListener("submit", function(event) {
+                  event.preventDefault();
+                  var query = encodeURIComponent(this.querySelector("input[name='q']").value);
+                  var url = "https://www.google.com/search?tbm=isch&q=" + query;
+                  window.location.href = url;
+                });
+            </script>
         </div>
     </div>
 </body>
