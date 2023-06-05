@@ -13,12 +13,24 @@
         </div>
         <div>
             <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
-            <form action="https://www.google.com/search">
-                <input class="MainForm" type="text" name="q">
+            <form action="https://www.google.com/search" method="get">
+                <div>
+                    <input type="text" name="q" style="width: 350px;">
+                </div>
                 <div class="center-button">
-                  <input type="submit" value="Google Search">
+                    <input type="submit" value="Google Search" style="margin-right: 5px;">
+                    <input type="button" value="I’m Feeling Lucky" onclick="redirectFirstResult()">
                 </div>
             </form>
+            <script>
+                // Redirect to the first Google search result
+                function redirectFirstResult() 
+                {
+                    var query = document.getElementsByName("q")[0].value;
+                    var luckyUrl = "https://www.google.com/search?q=" + encodeURIComponent(query) + "&btnI";
+                    window.location.href = luckyUrl;
+                }
+            </script>
         </div>
     </div>
 </body>
